@@ -25,6 +25,10 @@ using System.Web.Script.Serialization;
 
 using usb2snes;
 
+
+// NOTE: I'm keeping this as a GUI app since it makes (a) it's much easier to track that it's working and (b), we might want a visualization panel for OBS
+// NOTE: This should be run directly from AutoSplit so that output can be captured.
+
 namespace usb2snes
 {
     public partial class usb2snesmemoryviewer : Form
@@ -137,6 +141,7 @@ namespace usb2snes
         public usb2snesmemoryviewer()
         {
             InitializeComponent();
+            Console.WriteLine("MEMORY VIEWER STARTED");
 
             comboBoxRegion.Items.Add("SD2SNES_RANGE");
             comboBoxRegion.Items.Add("WRAM");
@@ -170,8 +175,9 @@ namespace usb2snes
             _timer.Elapsed += new ElapsedEventHandler(RefreshSnesMemory);
             _timer.Stop();
 
-            comboBoxRegion.SelectedIndex = 0;
+            comboBoxRegion.SelectedIndex = 1;
 
+            buttonRefresh_Click(null, null);
         }
 
         ~usb2snesmemoryviewer()
@@ -274,7 +280,7 @@ namespace usb2snes
             GetDataAndResetHead();
         }
 
-        private void buttonRefresh_Click(object sender, EventArgs e)
+        private void buttonRefresh_Click(object sender, EventArgs eargs)
         {
             // make sure the timer stops
             Monitor.Enter(_timerLock);
@@ -316,6 +322,12 @@ namespace usb2snes
         private void RefreshSnesMemory(object source, ElapsedEventArgs e)
         {
             System.Timers.Timer timer = (System.Timers.Timer)source;
+
+            if (pictureConnected.Image == Resources.bullet_red)
+            {
+                Console.WriteLine("CONNECT ATTEMPT");
+                buttonRefresh_Click(null, null);
+            }
 
             if (checkBoxAutoUpdate.Checked)
             {
@@ -615,9 +627,36 @@ namespace usb2snes
 
             for (uint i = 0; i < _regionSize; i++)
             {
+                if (_memory[i] != _provider.Bytes[(int)i])
+                {
+                    handleTriggers(i, _memory[i]);
+                }
+
                 _provider.WriteByteNoEvent(i, _memory[i]);
             }
             _ev.Reset();
+        }
+
+        // Deal with any defined triggers
+        public void handleTriggers(long index, byte value)
+        {
+            if (_region == 1) // WRAM
+            {
+                if (index == 0xB75)
+                {
+                    Console.WriteLine("FLOOR IS: " + value);
+                    handleFloor(value);
+                }
+            }
+        }
+
+        // On transition to a new floor.
+        public void handleFloor(byte level)
+        {
+            if (level == 11 || level == 21 || level == 31 || level == 41 || level == 51 || level == 61 || level == 71 || level == 81 || level == 91 || level == 100)
+            {
+                Console.WriteLine("SPLIT");
+            }
         }
 
         /// <summary>

@@ -17,3 +17,15 @@ C:\Users\O\dev\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.He
 C:\Users\O\dev\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\obj\Debug\Be.Windows.Forms.HexBox.csproj.CoreCompileInputs.cache
 C:\Users\O\dev\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\obj\Debug\Be.Windows.Forms.HexBox.dll
 C:\Users\O\dev\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\obj\Debug\Be.Windows.Forms.HexBox.pdb
+C:\Users\sethhetu\Documents\USB2SNESW_Sorlok\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\bin\Debug\Be.Windows.Forms.HexBox.dll
+C:\Users\sethhetu\Documents\USB2SNESW_Sorlok\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\bin\Debug\Be.Windows.Forms.HexBox.pdb
+C:\Users\sethhetu\Documents\USB2SNESW_Sorlok\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\bin\Debug\Be.Windows.Forms.HexBox.xml
+C:\Users\sethhetu\Documents\USB2SNESW_Sorlok\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\bin\Debug\websocket-sharp-with-proxy-support.dll
+C:\Users\sethhetu\Documents\USB2SNESW_Sorlok\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\obj\Debug\Be.Windows.Forms.HexBox.resources
+C:\Users\sethhetu\Documents\USB2SNESW_Sorlok\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\obj\Debug\Be.Windows.Forms.Properties.Resources.resources
+C:\Users\sethhetu\Documents\USB2SNESW_Sorlok\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\obj\Debug\Be.Windows.Forms.HexBox.csproj.GenerateResource.cache
+C:\Users\sethhetu\Documents\USB2SNESW_Sorlok\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\obj\Debug\Be.Windows.Forms.HexBox.csproj.CoreCompileInputs.cache
+C:\Users\sethhetu\Documents\USB2SNESW_Sorlok\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\obj\Debug\Be.Windows.Forms.HexBox.csproj.CopyComplete
+C:\Users\sethhetu\Documents\USB2SNESW_Sorlok\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\obj\Debug\Be.Windows.Forms.HexBox.dll
+C:\Users\sethhetu\Documents\USB2SNESW_Sorlok\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\obj\Debug\Be.Windows.Forms.HexBox.pdb
+C:\Users\sethhetu\Documents\USB2SNESW_Sorlok\Be.HexEditor-1.6.0\Be.HexEditor-1.6.0\sources\Be.Windows.Forms.HexBox\obj\Debug\Be.Windows.Forms.HexBox.csprojAssemblyReference.cache
